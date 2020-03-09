@@ -1367,8 +1367,8 @@ a:hover {
   width: 60px;
   height: 1px;
   background-color: #c9c9c9;
-  -webkit-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .our-latest .card-news .news-title .read-more:hover::after {
