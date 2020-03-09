@@ -1796,6 +1796,9 @@ a:hover {
   .our-latest .card-news {
     width: 690px;
   }
+  .sm-carousel {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1849,6 +1852,9 @@ a:hover {
   }
   .our-latest .card-news .news-title p {
     margin: 0 0 15px 0;
+  }
+  .sm-carousel {
+    display: none;
   }
 }
 
