@@ -2030,7 +2030,7 @@ a:hover {
   }
   .sm-carousel .owl-carousel .owl-dots {
     position: absolute;
-    bottom: -20px;
+    bottom: -30px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -2044,19 +2044,22 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .sm-carousel .owl-carousel .owl-dots .owl-dot {
+    margin: 0 6px;
+  }
   .sm-carousel .owl-carousel .owl-dots button.owl-dot.active {
     width: 9px;
     height: 9px;
-    margin: 0 5px;
     background-color: #21aac5;
   }
   .our-latest .read-more-btn button {
-    margin: 36px auto 0 auto;
+    margin: 50px auto 0 auto;
   }
 }
 
 @media (max-width: 480px) {
   .zx-header .menu {
+    top: 35px;
     position: fixed;
   }
   .zx-header-title {
