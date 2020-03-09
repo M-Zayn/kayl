@@ -1,6 +1,6 @@
 
 $(window).on("load", function () {
-  //$('body,html').scrollTop(0)
+  $('body,html').scrollTop(0)
   $(".demo").fadeOut(500, function () {
       $(this).remove();
       $('body').css("overflow-y", "visible");
