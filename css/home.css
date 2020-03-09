@@ -420,7 +420,7 @@ LODEARS
   position: absolute;
   height: 1px;
   width: 20px;
-  background: #000;
+  background: #a6a6a6;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -676,6 +676,13 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.zx-header .menu .menu-bars:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 .zx-header .menu .main {
@@ -721,6 +728,12 @@ a:hover {
           align-items: center;
   margin: 0 10px 0 0;
   cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.zx-header .icons .search:hover, .zx-header .icons .en:hover {
+  background-color: #74c9dd;
 }
 
 .zx-header .icons .search img {
@@ -774,6 +787,38 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.zx-header .scroll-icon:hover a img {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-animation: translate 1s infinite;
+          animation: translate 1s infinite;
+}
+
+@-webkit-keyframes translate {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+@keyframes translate {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
 }
 
 .what-we-do {
@@ -961,11 +1006,10 @@ a:hover {
 .activity .read-more-btn button {
   width: 137px;
   height: 38px;
-  color: #FFF;
-  background-color: black;
+  color: #91e3f5;
+  background-color: rgba(0, 0, 0, 0.102);
   border: none;
   border-radius: 50px;
-  opacity: 0.102;
   font-family: reg;
   font-size: 14px;
   margin: 27px auto 0 auto;
@@ -975,7 +1019,8 @@ a:hover {
 }
 
 .activity .read-more-btn button:hover {
-  opacity: 1;
+  background-color: #74c9dd;
+  color: #FFF;
 }
 
 .healthy-project {
@@ -991,6 +1036,7 @@ a:hover {
 .healthy-project .slide {
   cursor: pointer;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .healthy-project .slide .slide-title {
@@ -1020,6 +1066,13 @@ a:hover {
   opacity: 1;
 }
 
+.healthy-project .slide:hover img {
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  -webkit-transform: scale(1.012);
+          transform: scale(1.012);
+}
+
 .healthy-project .read-more-btn button {
   width: 137px;
   height: 38px;
@@ -1036,7 +1089,7 @@ a:hover {
 }
 
 .healthy-project .read-more-btn button:hover {
-  background-color: black;
+  background-color: #74c9dd;
   color: #FFF;
 }
 
@@ -1105,6 +1158,7 @@ a:hover {
 
 .flickity-enabled.is-draggable {
   height: 300px;
+  direction: ltr;
 }
 
 .gallery-cell {
@@ -1306,6 +1360,12 @@ a:hover {
   width: 60px;
   height: 1px;
   background-color: #c9c9c9;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.our-latest .card-news .news-title .read-more:hover::after {
+  bottom: -3px;
 }
 
 .our-latest .container {
@@ -1360,7 +1420,7 @@ a:hover {
 }
 
 .our-latest .read-more-btn button:hover {
-  background-color: black;
+  background-color: #74c9dd;
   color: #FFF;
 }
 
@@ -1481,7 +1541,6 @@ a:hover {
 }
 
 .footer .contact .contact-form form .input-container input, .footer .contact .contact-form form .input-container textarea {
-  cursor: pointer;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -1568,9 +1627,13 @@ a:hover {
 }
 
 .fa-instagram:hover {
-  color: #3f729b;
+  color: #bc2a8d;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}
+
+.hidden {
+  overflow-y: hidden;
 }
 
 @media (min-width: 1919px) {
@@ -1629,7 +1692,6 @@ a:hover {
   }
   .test {
     height: auto;
-    background: #FAFAFA;
     padding: 0 0 50px 0;
   }
   .test .title h2 {
@@ -1770,7 +1832,6 @@ a:hover {
   }
   .zx-header {
     height: 450px;
-    background: #FAFAFA;
   }
   .zx-header .menu {
     right: 70px;
@@ -1799,15 +1860,17 @@ a:hover {
     width: 260px;
     height: unset;
     background-color: unset;
-    color: #123;
-    border-bottom: 1px solid #DDD;
-    border-color: #21aac5;
+    color: #666;
     border-radius: unset;
-    padding: 0 0 6px 0;
+    padding: 0 0 8px 0;
   }
   .activity .news .main-news {
     width: 470px;
-    height: 256px;
+    height: auto;
+  }
+  .activity .news .main-news img {
+    width: auto;
+    height: auto;
   }
   .activity .news .sup-news .article {
     width: 450px;
@@ -1836,7 +1899,7 @@ a:hover {
     font: inherit;
     width: 8px;
     height: 8px;
-    margin: 0 2px;
+    margin: 0 4px;
   }
   .healthy-project .read-more-btn button {
     margin: 45px auto 0 auto;
@@ -1908,6 +1971,15 @@ a:hover {
   .zx-header .menu {
     position: fixed;
   }
+  .zx-header-title {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .zx-header .zx-header-title .ar-title, .zx-header .zx-header-title .en-title {
+    font-size: 24px;
+  }
   .menu-popup .select {
     width: 190px;
   }
@@ -1930,19 +2002,30 @@ a:hover {
   }
   .activity .news .main-news {
     width: 350px;
-    height: 180px;
+    height: 220px;
+  }
+  .activity .news .main-news img {
+    width: 100%;
+    height: 100%;
   }
   .activity .news .sup-news .article {
     width: 380px;
     padding: 8px 16px;
   }
+  .activity .news .sup-news .active::before {
+    opacity: 0;
+  }
+  .activity .read-more-btn button {
+    background-color: #74c9dd;
+    color: #FFF;
+  }
   .healthy-project .read-more-btn button {
-    background-color: #000;
-    color: #fff;
+    background-color: #74c9dd;
+    color: #FFF;
   }
   .our-latest .read-more-btn button {
-    background-color: #000;
-    color: #fff;
+    background-color: #74c9dd;
+    color: #FFF;
   }
   .footer {
     height: 800px;
@@ -1968,8 +2051,11 @@ a:hover {
   .zx-header .icons .search, .zx-header .icons .en {
     margin: 0 10px 6px 0;
   }
+  .search-popup .search-form {
+    width: 80%;
+  }
   .search-popup .search-form input {
-    width: 250px;
+    width: 100%;
   }
   .zx-header {
     height: 520px;
@@ -1989,6 +2075,9 @@ a:hover {
   }
   .activity .news .sup-news .article .place, .activity .news .sup-news .article .time {
     font-size: 14px;
+  }
+  .activity .read-more-btn button {
+    margin: 18px auto 0 auto;
   }
   .test .slide .feedback {
     font-size: 14px;
@@ -2013,22 +2102,23 @@ a:hover {
     left: 20px;
   }
   .zx-header .zx-header-title {
-    top: 56%;
+    top: 57%;
     left: 0;
-    padding: 0 6px;
   }
   .what-we-do {
     margin: 40px 0 0 0;
   }
   .activity .news .main-news {
     width: 300px;
-    height: 160px;
   }
   .activity .news .sup-news .article {
     width: 310px;
   }
   .footer .copyrights .icons {
-    margin: 15px 0 12px 0;
+    margin: 0 0 15px 0;
+  }
+  .footer .copyrights .copy span {
+    margin: 6px 0 0 0;
   }
 }
 
@@ -2059,6 +2149,9 @@ a:hover {
   }
   .our-latest .ui-card-slider .left-hidden-slide {
     left: -490px;
+  }
+  .healthy-project .slide .slide-title span {
+    font-size: 14px;
   }
 }
 

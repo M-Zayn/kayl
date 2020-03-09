@@ -124,8 +124,8 @@ $(function() {
 //   navText: ["<img src='../images/arrow-left.png'>","<img src='../images/arrow-left.png'>"]
 // });
 
-$( ".owl-prev").html('<img src="../images/arrow-right.png">');
-$( ".owl-next").html('<img src="../images/arrow-left.png">');
+$( ".owl-prev").html('<img src="images/arrow-right.png">');
+$( ".owl-next").html('<img src="images/arrow-left.png">');
 
 
 var flkty = new Flickity( '.main-gallery', {
@@ -164,7 +164,7 @@ $('.our-latest .owl-carousel').owlCarousel({
 });
 
 
-$(".zx-header .icons .search img").on("click", function() {
+$(".zx-header .icons .search").on("click", function() {
     $(".search-popup").fadeIn();
     $("html, body").css({"overflow-y":"hidden"});
 });
@@ -191,11 +191,13 @@ $(".menu").on("click", function () {
   $("#nav-icon3").toggleClass("open");
   $(".menu-popup").fadeToggle();
   $(".menu").toggleClass("fixed");
+  $("html, body").toggleClass("hidden");
 });
 $(".menu-popup").on("click", function() {
   $(".menu-popup").fadeOut();
   $("#nav-icon3").removeClass("open");
   $(".menu").removeClass("fixed");
+  $("html, body").removeClass("hidden");
 });
 
 
