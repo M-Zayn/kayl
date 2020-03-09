@@ -261,15 +261,15 @@ $('#slider').cardSlider({
   $('#slider').cardSlider({
       slideTag:'div',
       slideClass:'slide',
-      current: 0
+      current: 1
     });
     
 
 $(".our-latest .slider-navs .left").on("click", function() {
-  $(".our-latest .ui-card-slider .slide").prev().click()
+  $(".our-latest .ui-card-slider .left-slide").click();  
 });
 $(".our-latest .slider-navs .right").on("click", function() {
-  $(".our-latest .ui-card-slider .slide").next().click()
+  $(".our-latest .ui-card-slider .right-slide").click()
 });
 
 
