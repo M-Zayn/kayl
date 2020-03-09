@@ -870,6 +870,13 @@ a:hover {
           flex-direction: column;
 }
 
+.what-we-do .servs .serv:hover img {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
 .what-we-do .servs .serv span {
   font-family: reg;
   font-size: 19px;
@@ -1594,6 +1601,12 @@ a:hover {
   font-weight: bold;
   padding: 8px 51px 12px;
   margin: 11px 0px 0px 22px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.footer .contact .contact-form .send-btn button:hover {
+  padding: 8px 55px 12px;
 }
 
 .footer .copyrights {
