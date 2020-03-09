@@ -379,7 +379,7 @@ LODEARS
   left: 0;
   direction: ltr;
   background-color: #555;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .demo:nth-of-type(4n+1) {
@@ -1649,6 +1649,19 @@ a:hover {
   overflow-y: hidden;
 }
 
+.our-latest .ui-card-slider {
+  display: block;
+}
+
+.our-latest .slider-navs {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sm-carousel {
+  display: none;
+}
+
 @media (min-width: 1919px) {
   .test {
     height: auto;
@@ -1977,6 +1990,62 @@ a:hover {
   .our-latest .slider-navs {
     top: 40%;
     width: calc(100% + -20px);
+  }
+  .our-latest .ui-card-slider {
+    display: none;
+  }
+  .our-latest .slider-navs {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sm-carousel {
+    display: block;
+  }
+  .sm-carousel .owl-carousel.owl-rtl .owl-item {
+    padding: 6px;
+  }
+  .sm-carousel .card-news {
+    width: 260px;
+    margin: 0 auto;
+    padding: 16px 16px;
+  }
+  .sm-carousel .card-news .news-img {
+    height: auto;
+  }
+  .sm-carousel .card-news .news-title h5 {
+    font-size: 15px;
+    margin: 12px 0 15px 0;
+  }
+  .sm-carousel .card-news .news-title p {
+    font-size: 15px;
+  }
+  .sm-carousel .card-news .news-title .read-more::after {
+    left: -20px;
+  }
+  .sm-carousel .owl-carousel .owl-dots {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sm-carousel .owl-carousel .owl-dots button.owl-dot.active {
+    width: 9px;
+    height: 9px;
+    margin: 0 5px;
+    background-color: #21aac5;
+  }
+  .our-latest .read-more-btn button {
+    margin: 36px auto 0 auto;
   }
 }
 
